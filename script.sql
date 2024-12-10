@@ -85,4 +85,4 @@ DELETE FROM `voitures` WHERE `NumImmatriculation` = '1234ABC';
 
 SELECT `Nom`, `Adresse`, `Email` FROM `clients`;
 SELECT * FROM `voitures` WHERE `marque` = "Toyota";
-SELECT * FROM `contracts` C JOIN `voitures` `V` on `C`.`NumImmatriculation` = `V`.`NumImmatriculation` JOIN `clients` `CL` on `C`.`NumClient` = `CL`.`NumClient`
+SELECT * FROM `contracts` `C` JOIN `voitures` `V` on `C`.`NumImmatriculation` = `V`.`NumImmatriculation` JOIN `clients` `CL` on `C`.`NumClient` = `CL`.`NumClient`
